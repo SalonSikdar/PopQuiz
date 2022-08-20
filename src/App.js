@@ -1,25 +1,24 @@
-import logo from './logo.svg';
 import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import "bootswatch/dist/cyborg/bootstrap.min.css";
+import React from 'react';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+
+import Home from './pages/Home';
+import QuizQuestion from './pages/QuizQuestion';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" page={<Home />}>
+          <Route index element={<Home />} />
+          <Route path="quiz-questions" element={<QuizQuestion />} />
+        </Route>
+      </Routes>
+    </BrowserRouter>
   );
 }
 
 export default App;
+
