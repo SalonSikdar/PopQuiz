@@ -1,11 +1,11 @@
-import './App.css';
-import 'bootstrap/dist/css/bootstrap.min.css';
+import "./App.css";
+import "bootstrap/dist/css/bootstrap.min.css";
 import "bootswatch/dist/cyborg/bootstrap.min.css";
-import React from 'react';
+import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
-import Home from './pages/Home';
-import QuizQuestion from './pages/QuizQuestion';
+import Home from "./pages/Home";
+import QuizQuestion from "./pages/QuizQuestion";
 
 function App() {
   return (
@@ -21,4 +21,3 @@ function App() {
 }
 
 export default App;
-
