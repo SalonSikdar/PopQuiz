@@ -7,7 +7,7 @@ import "bootswatch/dist/cyborg/bootstrap.min.css";
 function QuizTopicCard() {
   return (
     <div className="space-around">
-      <div className="card mb-3">
+      <div className="card mb-3 purple-shadow">
         <h3 className="card-header">Card header</h3>
         <div className="card-body">
           <h5 className="card-title">Special title treatment</h5>
