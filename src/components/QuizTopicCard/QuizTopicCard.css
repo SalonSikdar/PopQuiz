@@ -1,6 +1,18 @@
 .space-around {
   padding: 2rem;
 }
-.purple-shadow{
-    box-shadow: 0px 0px 15px rgba(132, 68, 132, 0.887);
+.purple-shadow {
+  box-shadow: 0px 0px 15px rgba(132, 68, 132, 0.887);
+}
+
+.play-button {
+  margin: 1rem;
+}
+
+.quiz-prompt {
+  width: 22rem;
+}
+
+img {
+  max-width: 100%;
 }

@@ -8,10 +8,11 @@ function QuizTopicCard() {
   return (
     <div className="space-around">
       <div className="card mb-3 purple-shadow">
-        <h3 className="card-header">Card header</h3>
+        <h3 className="card-header">Harry Potter</h3>
         <div className="card-body">
-          <h5 className="card-title">Special title treatment</h5>
-          <h6 className="card-subtitle text-muted">Support card subtitle</h6>
+          <h5 className="card-title">
+            “It does not do to dwell on dreams and forget to live.”
+          </h5>
         </div>
         {/* <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -31,25 +32,18 @@ function QuizTopicCard() {
           </text>
         </svg> */}
         <div className="card-body">
-          <p className="card-text">
-            Some quick example text to build on the card title and make up the
-            bulk of the card's content.
-          </p>
+          <img src="/jarry-potter.jpg" alt="quiz cover" />
+        </div>
+        <div className="card-body quiz-prompt">
+          <p className="card-text ">Take the Quiz to test yourself!</p>
         </div>
         <ul className="list-group list-group-flush">
-          <li className="list-group-item">Cras justo odio</li>
-          <li className="list-group-item">Dapibus ac facilisis in</li>
-          <li className="list-group-item">Vestibulum at eros</li>
+          <li className="list-group-item">5 Questions</li>
+          <li className="list-group-item">Level : Pro</li>
         </ul>
-        <div className="card-body">
-          <a href="/" className="card-link">
-            Card link
-          </a>
-          <a href="/" className="card-link">
-            Another link
-          </a>
-        </div>
-        <div className="card-footer text-muted">2 days ago</div>
+        <button class="btn btn-lg btn-info play-button" type="button">
+          Play Now !
+        </button>
       </div>
     </div>
   );
