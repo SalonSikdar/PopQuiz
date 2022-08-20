@@ -42,10 +42,10 @@ function QuizTopicCard() {
           <li className="list-group-item">Vestibulum at eros</li>
         </ul>
         <div className="card-body">
-          <a href="/home" className="card-link">
+          <a href="/" className="card-link">
             Card link
           </a>
-          <a href="/home" className="card-link">
+          <a href="/" className="card-link">
             Another link
           </a>
         </div>

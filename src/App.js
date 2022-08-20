@@ -4,7 +4,7 @@ import "bootswatch/dist/cyborg/bootstrap.min.css";
 import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
-import Home from "./pages/Home/Home";
+import Home from "./pages/Home/Home.js";
 import QuizQuestion from "./pages/QuizQuestion";
 
 function App() {
