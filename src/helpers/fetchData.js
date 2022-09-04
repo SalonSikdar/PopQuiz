@@ -54,7 +54,7 @@ const getQuizList = () => {
     },
     {
       quizId: "37ytrfd",
-      title: "Friends",
+      title: "F.R.I.E.N.D.S",
       tagLine: "Pivot!",
       image: "/friends.jpg",
       noOfQuestions: 13,
