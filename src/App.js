@@ -5,7 +5,7 @@ import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import Home from "./pages/Home/Home.js";
-import QuizQuestion from "./pages/QuizQuestion";
+import QuizQuestion from "./pages/Question/QuizQuestion";
 import Rules from "./pages/Rules/rules";
 
 function App() {

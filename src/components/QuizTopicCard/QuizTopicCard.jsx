@@ -6,6 +6,16 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "bootswatch/dist/cyborg/bootstrap.min.css";
 
 function QuizTopicCard({ quiz }) {
+  const handleCurrentQuiz = (e) => {
+    // (e) => {
+
+    // }
+    localStorage.setItem("curQuiz", JSON.stringify(quiz));
+    localStorage.setItem("curQuestion", 0);
+    localStorage.setItem("attempts", []);
+    e.preventDefault();
+    window.location.href = "/rules";
+  };
   return (
     <div className="space-around" style={{ display: "flex", flex: 1 }}>
       <div className="card mb-3 purple-shadow">
@@ -23,11 +33,15 @@ function QuizTopicCard({ quiz }) {
           <li className="list-group-item">5 Questions</li>
           <li className="list-group-item">Level : Pro</li>
         </ul>
-        <Link to="/rules">
-          <button className="btn btn-lg btn-info play-button" type="button">
-            Play Now !
-          </button>
-        </Link>
+        {/* <Link to="/rules"> */}
+        <button
+          className="btn btn-lg btn-info play-button"
+          type="button"
+          onClick={handleCurrentQuiz}
+        >
+          Play Now !
+        </button>
+        {/* </Link> */}
       </div>
     </div>
   );

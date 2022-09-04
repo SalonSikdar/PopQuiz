@@ -73,6 +73,34 @@ const getQuizList = () => {
   return quizList;
 };
 
+const getQuestion = (quizId, qNo) => {
+  console.log("returning question" + quizId);
+  console.log("returning question no" + qNo);
+  let questionsMap = {
+    "23uhnyh": [
+      {
+        q: "What is this?",
+        a: "this is a",
+        b: "this is b",
+        c: "this is c",
+        d: "this is d",
+        correct: "c",
+      },
+    ],
+    "56tghgh": [],
+    "67ghjkj": [],
+    "98ghkut": [],
+    "54erdfv": [],
+    "09ujhyg": [],
+    "37ytrfd": [],
+    "82yhbdf": [],
+  };
+  let questions = questionsMap[quizId];
+  console.log("FOund questions" + JSON.stringify(questions));
+  return questions[parseInt(qNo)];
+};
+
 export default {
   getQuizList,
+  getQuestion,
 };
