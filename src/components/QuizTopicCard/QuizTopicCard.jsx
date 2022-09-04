@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 import "./QuizTopicCard.css";
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -22,9 +23,11 @@ function QuizTopicCard({ quiz }) {
           <li className="list-group-item">5 Questions</li>
           <li className="list-group-item">Level : Pro</li>
         </ul>
-        <button className="btn btn-lg btn-info play-button" type="button">
-          Play Now !
-        </button>
+        <Link to="/rules">
+          <button className="btn btn-lg btn-info play-button" type="button">
+            Play Now !
+          </button>
+        </Link>
       </div>
     </div>
   );

@@ -6,6 +6,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import Home from "./pages/Home/Home.js";
 import QuizQuestion from "./pages/QuizQuestion";
+import Rules from "./pages/Rules/rules";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <Routes>
         <Route path="/" page={<Home />}>
           <Route index element={<Home />} />
+          <Route path="rules" element={<Rules />} />
           <Route path="quiz-questions" element={<QuizQuestion />} />
         </Route>
       </Routes>
